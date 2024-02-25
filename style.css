@@ -1,0 +1,133 @@
+@font-face {
+    font-family: my-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root{
+    --button-color: #596D48;
+    --input-border: #E5E7EB;
+    --text-size: 22px;
+    --text-font: url(fonts/Forum-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 35% auto;
+}
+
+.pict-holder {
+    position: relative;
+    width: 100%;
+    font-family: my-font, sans-serif;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background: white;
+    opacity: 0.6;
+    color: black;
+    text-align: center;
+    left: 0;
+    top: 12rem;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    overflow: hidden;
+}
+
+.logo-container > img {
+    width: min(20%, 80px);
+}
+
+.logo-container > span {
+    font-size: 3em;
+}
+
+.input-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--text-font), sans-serif;
+    font-size: var(--text-size);
+}
+
+.text {
+    font-weight: bold;
+}
+
+.header {
+    width: min(450px, 100%);
+    margin: 15px;
+}
+
+.short {
+    margin-top: 15px;
+    color: brown;
+}
+
+.data {
+    display: grid;
+    gap: 20px;
+    column-gap: max(20px, 10%);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+form > div {
+    background-color:aliceblue;
+    padding: 25px;
+    box-shadow: 1px 5px 5px rgba(76, 27, 27, 0.7);
+}
+
+input {
+    width: 100%;
+    border: solid 3px var(--input-border);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button {
+    margin: 15px;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.footer {
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: 3px solid var(--button-color);
+}
+
+button:hover {
+    transition: 0.1s;
+    background-color: rgba(63, 199, 81, 0.6);
+    box-shadow: 2px 1px 5px rgba(45, 161, 61, 0.6);
+}
+
+
